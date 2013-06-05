@@ -8,6 +8,11 @@
             "uri": "workspaces",
             "summary": "Get workspaces"
         },
+        "GetClients": {
+            "httpMethod": "GET",
+            "uri": "clients",
+            "summary": "Get clients"
+        },
         "GetWorkspaceUsers": {
             "httpMethod": "GET",
             "uri": "workspaces/{workspace-id}/users",
@@ -20,6 +25,11 @@
                     "type": "integer"
                 }
             }
+        },
+        "CreateProject" : {
+            "httpMethod" : "POST",
+            "uri": "projects",
+            "summary" : "Create a project"
         }
     }
 }
