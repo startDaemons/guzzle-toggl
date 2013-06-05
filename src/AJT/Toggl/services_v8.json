@@ -15,8 +15,16 @@
         },
         "GetProjects": {
             "httpMethod": "GET",
-            "uri": "projects",
-            "summary": "Get projects"
+            "uri": "workspaces/{workspace-id}/projects",
+            "summary": "Get projects",
+            "parameters": {
+                "workspace-id": {
+                    "location": "uri",
+                    "description": "Workspace ID",
+                    "required": true,
+                    "type": "integer"
+                }
+            }
         },
         "GetWorkspaceUsers": {
             "httpMethod": "GET",
