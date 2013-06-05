@@ -30,16 +30,16 @@ class TogglClient extends Client
     public static function factory($config = array())
     {
         $default = array(
-            'base_url' => 'https://www.toggl.com/api/{apiVersion}',
+            'base_url' => 'https://www.toggl.com/api/{api_version}',
             'debug' => false,
-            'apiVersion' => 'v6'
+            'api_version' => 'v6'
         );
-        $required = array('api_key', 'base_url','apiVersion');
+        $required = array('api_key', 'base_url','api_version');
         $config = Collection::fromConfig($config, $default, $required);
 
         $client = new self($config->get('base_url'), $config);
         // Attach a service description to the client
-        if($config->get('apiVersion') == 'v8'){
+        if($config->get('api_version') == 'v8'){
             $description = ServiceDescription::factory(__DIR__ . '/services_v8.json');    
         } else {
             $description = ServiceDescription::factory(__DIR__ . '/services_v6.json');    
