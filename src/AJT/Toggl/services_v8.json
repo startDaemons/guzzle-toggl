@@ -13,6 +13,11 @@
             "uri": "clients",
             "summary": "Get clients"
         },
+        "GetProjects": {
+            "httpMethod": "GET",
+            "uri": "projects",
+            "summary": "Get projects"
+        },
         "GetWorkspaceUsers": {
             "httpMethod": "GET",
             "uri": "workspaces/{workspace-id}/users",
