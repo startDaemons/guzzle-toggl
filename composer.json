@@ -1,7 +1,7 @@
 {
-    "name": "ajt/guzzle-toggl",
+    "name": "almostanything/guzzle-toggl",
     "type": "library",
-    "description": "Toggl API client written on top of Guzzle PHP.",
+    "description": "Toggl API client written on top of Guzzle PHP. Fork of ajt/guzzle-toggl.",
     "keywords": ["toggl", "ajt", "api", "guzzle"],
     "homepage": "http://github.com/arendjantetteroo/guzzle-toggl",
     "license": "MIT",
@@ -9,6 +9,10 @@
         {
             "name": "Arend-Jan Tetteroo",
             "homepage": "http://www.arendjantetteroo.nl"
+        },
+        {
+            "name": "Rhys Emmerson",
+            "homepage": "http://www.almostanything.com.au"
         }
     ],
     "require": {
